@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using MongoDB.Driver;
 using MyCV.Models;
 using System;
 using System.Collections.Generic;
@@ -12,15 +14,23 @@ namespace MyCV.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IConfiguration configuration;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
         {
             _logger = logger;
+            this.configuration = configuration;
         }
 
         public IActionResult Index()
         {
-            return View();
+
+            var client = new MongoClient(configuration.GetConnectionString("MVConnectionString"));
+            var database = client.GetDatabase("bkhovme9upbvyna").GetCollection<About>("About");
+
+            var result = database.Find(x => x.OpenToWork == "Yes").FirstOrDefault();
+
+            return View(result);
         }
 
         public IActionResult Privacy()

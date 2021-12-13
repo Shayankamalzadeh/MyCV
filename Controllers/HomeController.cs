@@ -15,24 +15,24 @@ namespace MyCV.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IConfiguration configuration;
+        private readonly MongoClient Client;
 
         public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
         {
             _logger = logger;
             this.configuration = configuration;
+            Client = new MongoClient(configuration.GetConnectionString("MVConnectionString"));
         }
 
         public IActionResult Index()
         {
-
-            var client = new MongoClient(configuration.GetConnectionString("MVConnectionString"));
-            var database = client.GetDatabase("bkhovme9upbvyna").GetCollection<About>("About");
-
+            var database = Client.GetDatabase("bkhovme9upbvyna").GetCollection<About>("About");
             var result = database.Find(x => x.OpenToWork == "Yes").FirstOrDefault();
-
             return View(result);
         }
 
+
+       
         public IActionResult Privacy()
         {
             return View();

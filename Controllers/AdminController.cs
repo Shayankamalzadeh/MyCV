@@ -5,8 +5,11 @@ using MongoDB.Driver;
 using MyCV.Models;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace MyCV.Controllers
 {
@@ -46,6 +49,41 @@ namespace MyCV.Controllers
         public IActionResult Dashboard()
         {
             return View();
+        }
+
+        public IActionResult Layout()
+        {
+            return View();
+        }
+
+        public IActionResult XML()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult XML(string surname, string name, string birthyear,string years)
+        {
+
+            MemoryStream ms = new MemoryStream();
+            XmlWriterSettings xws = new XmlWriterSettings();
+            xws.OmitXmlDeclaration = true;
+            xws.Indent = true;
+
+            using (XmlWriter xw = XmlWriter.Create(ms, xws))
+            {
+                XDocument doc = new XDocument(
+                 new XElement("Tidrans",
+                  new XElement("surname", surname),
+                  new XElement("name", name),
+                  new XElement("birthyear", birthyear),
+                   new XElement("years", years)
+                 )
+                );
+                doc.WriteTo(xw);
+            }
+            ms.Position = 0;
+            return File(ms, "text/xml", "Sample.xml");
+            
         }
 
     }

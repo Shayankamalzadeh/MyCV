@@ -1,0 +1,210 @@
+﻿body {
+    background: #ffffff;
+    color: #000;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#container {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header {
+    width: 960px;
+    float: left;
+    background: #21aabd;
+    color: #ffffff;
+}
+
+#menu {
+    width: 960px;
+    float: left;
+    background: #888888;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+    #menu a {
+        font-size: 1.1em;
+        margin-left: 0.5em;
+        color: #ffffff;
+    }
+
+        #menu a:hover {
+            color: #fffc07;
+        }
+
+#main {
+    width: 720px;
+    float: left;
+    background: #eeeeee;
+}
+
+#sidebar {
+    width: 200px;
+    float: right;
+    background: #dfdfdf;
+}
+
+#footer {
+    width: 960px;
+    float: left;
+    background: #666666;
+    color: #ffffff;
+    margin-top: 1em;
+}
+
+#myv {
+    width: 720px;
+}
+
+/** Media Queries **/
+@media (min-width: 768px) and (max-width: 980px) {
+    #container {
+        margin: 0px auto;
+    }
+
+    #container, #header, #menu, #footer {
+        width: 748px;
+    }
+
+    #main {
+        width: 510px;
+    }
+
+    #sidebar {
+        width: 210px;
+    }
+
+    #myv {
+        width: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    #container {
+        margin: 0px auto;
+    }
+
+    #container, #header, #menu, #main, #sidebar, #footer, #myv {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #container, #header, #menu, #footer {
+        width: 1170px;
+    }
+
+    #main {
+        width: 800px;
+    }
+
+    #sidebar {
+        width: 350px;
+    }
+
+
+    #rolltr a.tr {
+        font-weight: bold;
+        padding: 5px 10px;
+        background: #00ff00;
+        box-shadow: 3px 3px 4px #999;
+        border-radius: 20px;
+        transition: background 1.0s ease, color 1.0s linear;
+    }
+
+        #rolltr a.tr:hover {
+            background: #ffff00;
+            color: #ff0000;
+            box-shadow: 6px 6px 8px #999;
+        }
+
+    /** Media Queries **/
+    @media (min-width: 768px) and (max-width: 980px) {
+        #container {
+            margin: 0px auto;
+        }
+
+        #container, #header, #menu, #footer {
+            width: 748px;
+        }
+
+        #main {
+            width: 510px;
+        }
+
+        #sidebar {
+            width: 210px;
+        }
+
+        #myv {
+            width: 500px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        #container {
+            margin: 0px auto;
+        }
+
+        #container, #header, #menu, #main, #sidebar, #footer, #myv {
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        #container, #header, #menu, #footer {
+            width: 1170px;
+        }
+
+        #main {
+            width: 800px;
+        }
+
+        #sidebar {
+            width: 350px;
+        }
+    }
+
+    #tr2 {
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: width 2s;
+        box-shadow: 6px 6px 8px #999;
+    }
+
+        #tr2:hover {
+            width: 300px;
+        }
+
+    @font-face {
+        font-family: "Kingthings Christmas";
+        src: url("../../Font/Kingthings_Christmas.ttf") format("eot"),url("Kingthings_Christmas.woff") format("woff"),url("../../Font/Kingthings_Christmas.ttf") format("truetype"), url("Kingthings_Christmas.svg#KingthingsChristmas") format("svg");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    #myfont {
+        font-family: "Kingthings Christmas";
+        font-size: 3em;
+    }
+}

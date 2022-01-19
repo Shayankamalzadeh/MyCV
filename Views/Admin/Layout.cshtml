@@ -1,0 +1,85 @@
+﻿@{
+    Layout = "";
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="~/css/Admin/Layot.css">
+   
+    <title>A CSS layout</title>
+</head>
+<body>
+    <section id="container">
+        <header id="header"></header>
+        <article id="content">
+           
+            <p style="padding:5%">
+                I am a. Net developer who loves learning more and sharing my knowledge. I am studying Data science at
+                Pavia university for my master's degree. I am keen on working as a team member on projects. Over 9
+                years experience in web, Desktop application development involved in all stages of the Software
+                Development Life Cycle. Experienced in .Net development, software architecture, and design, refactoring,
+                SOLID principles, Clean Architecture.
+                Joined in different industries such as Terminal handling, shipping, medical, capital marketing, Bank
+                Infrastructure and ERP system.
+            </p>
+
+            <p>
+               <img  src="~/img/Shayan4.jpg" class="right"/>
+                Specialist Back-end Developer 2015 –2017
+                CONSOL (Container Solution) application which using in all ports of Iran (almost 700 terminal container) for
+                managing Container business
+               <ul>
+                   <li>
+                       Member of cross-functional team of 20 in 3 locations (Tehran, Bandar Abbas and Masher ports)
+                   </li>
+                   <li>
+                       Initiated different layers, Handheld , Web ,Mobile and desktop applications
+                   </li>
+                   <li>
+                       Responsible for research and development
+                   </li>
+                   <li>
+                       administered Team Foundation Server
+                   </li>
+                   <li>
+                       Crafted reports by Crystal report Achievement
+                   </li>
+                   <li>
+                       Handle “Gate module” for terminals which have gate and need save data in gate in/out time for each
+                       track(more than 400 terminals use this module)
+                   </li>
+                   <li>
+                       Award in our company for the best developer in 2017
+                   </li>
+                   <li>
+                       More than 1000 Unit Tests(MS Test)/Mock with Moq
+                   </li>
+
+               </ul>
+
+            </p>
+
+        </article>
+      
+        <nav id="navbar">
+            <a href="@Url.Action("XML", "Admin")">XML Create</a>
+            <a href="@Url.Action("Dashboard", "Admin")">Dashboard page</a>
+            <a href="@Url.Action("Index", "home")">Home page</a>
+           
+        </nav>
+        <nav id="menu">
+            <h3>Archive</h3>
+            <ul>
+                <li> <a href="@Url.Action("XML", "Admin")">XML Create</a></li>
+                <li> <a href="@Url.Action("Dashboard", "Admin")">Dashboard page</a></li>
+                <li> <a href="@Url.Action("Index", "home")">Home page</a></li>
+            </ul>
+
+        </nav>
+        <footer id="footer">
+            “&copy; My Website 2021”
+        </footer>
+    </section>
+</body>
+</html>

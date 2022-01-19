@@ -1,63 +1,61 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@{
+    Layout = "";
+}
+
+
+<html>
 <head>
-    <title>Bootstrap Example</title>
+    <title>Shayan Kamalzadeh</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <style>
-        /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
-        .row.content {
-            height: 1500px
-        }
-
-        /* Set gray background color and 100% height */
-        .sidenav {
-            background-color: #f1f1f1;
-            height: 100%;
-        }
-
-        /* Set black background color, white text and some padding */
-        footer {
-            background-color: #555;
-            color: white;
-            padding: 15px;
-        }
-
-        /* On small screens, set height to 'auto' for sidenav and grid */
-        @@media screen and (max-width: 767px) {
-            .sidenav {
-                height: auto;
-                padding: 15px;
-            }
-
-            .row.content {
-                height: auto;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="~/css/Admin/style.css">
+    <link rel="stylesheet" href="~/css/Admin/Menu.css">
 </head>
-<body>
 
-    <div class="container-fluid">
-        <div class="row content">
-            <div class="col-sm-3 sidenav">
-                <h4>Shayan Kamalzadeh</h4>
-                
-            </div>
+<section id="container">
+    <header id="header">
+        <h1>Shayan Kamalzadeh</h1>
+    </header>
+    <nav id="menu">
+        <a href="">Home</a>
+        <a href="@Url.Action("Layout", "Admin")">Who I am</a>
+        <a href="@Url.Action("XML", "Admin")">XML Generator</a>
+    </nav>
 
-            <div class="col-sm-9">
-                <h4><small>Insert data to MongoDb</small></h4>
-                
-            </div>
+    <article id="main">
+        <h2>Introduction</h2>
+        <br>
+        <img id="im1" src="~/img/Shayan.gif">
+        <p>
+            I am a. Net developer who loves learning more and sharing my knowledge. I am studying Data science at Pavia university for my master's degree.
+        </p>
+        <video id="myv" src="~/img/unipv.mp4" width="720" controls>
+            Sorry, your browser does not support the VIDEO tag
+        </video><br><br>
+        <audio src="~/img/bach.mp3" controls>
+            Sorry, your browser does not support the AUDIO tag
+        </audio>
+    </article>
+    <aside id="sidebar">
+        <h3></h3>
+        <ul>
+            <li><a href="@Url.Action("XML", "Admin")">XML Generator</a></li>
+            <li><a href="@Url.Action("Layout", "Admin")" ><span>Layout Sample</span></a></li>
+        </ul>
+    </aside>
+    <footer id="footer">
+        <p style="margin-left: 1em">
+            &copy; All rights reserved - 2021
+        </p>
+        <br/>
+        <div id="myfont">
+            use font in css
         </div>
-    </div>
-
-    <footer class="container-fluid">
-        <p>Footer Text</p>
     </footer>
+</section>
 
-</body>
+
+
+
 </html>
+

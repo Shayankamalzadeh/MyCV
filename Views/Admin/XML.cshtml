@@ -20,12 +20,13 @@
     <script src="~/js/My.js"></script>
 </head>
 <body>
-    <script>var today=new Date();
-document.write ("<h2>Date: " + today.getDate () + "/" +
-(today.getMonth () +1) + "/" +
- today.getFullYear() + ", Time: " +
- today.getHours () + ":" +
- today.getMinutes () + "</h2>");</script>
+    <script>
+    var today = new Date();
+        document.write("<h2>Date: " + today.getDate() + "/" +
+            (today.getMonth() + 1) + "/" +
+            today.getFullYear() + ", Time: " +
+            today.getHours() + ":" +
+            today.getMinutes() + "</h2>");</script>
 
     <hr width="40%" align="left">
 
@@ -48,7 +49,7 @@ document.write ("<h2>Date: " + today.getDate () + "/" +
 
         (so you are or going to be&nbsp
         <input name="years" id="years" size="1" readonly>)<br><br>
-       
+
         <button type="submit" onclick="checkForm()">Send</button>
     </form>
 </body>

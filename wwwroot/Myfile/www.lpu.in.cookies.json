@@ -1,0 +1,174 @@
+[
+  {
+    "name": "npf_fx",
+    "value": "1",
+    "domain": ".www.lpu.in",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "npf_r",
+    "value": "http://www.shayankamalzadeh.it/",
+    "domain": ".www.lpu.in",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "npf_l",
+    "value": "www.lpu.in",
+    "domain": ".www.lpu.in",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "npf_u",
+    "value": "https://www.lpu.in/",
+    "domain": ".www.lpu.in",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_gcl_au",
+    "value": "1.1.1920085513.1654868575",
+    "domain": ".lpu.in",
+    "path": "/",
+    "expires": 1662644574,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_ga",
+    "value": "GA1.2.1107794535.1654868575",
+    "domain": ".lpu.in",
+    "path": "/",
+    "expires": 1717940574,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_gid",
+    "value": "GA1.2.1011300338.1654868575",
+    "domain": ".lpu.in",
+    "path": "/",
+    "expires": 1654954974,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_uetsid",
+    "value": "82a4fac0e89d11ec979621529212ec28",
+    "domain": ".lpu.in",
+    "path": "/",
+    "expires": 1654954974,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_uetvid",
+    "value": "4007eea0e70e11ec85a3bf24ab6a4b1d",
+    "domain": ".lpu.in",
+    "path": "/",
+    "expires": 1688564574,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "__sts",
+    "value": "{\"sid\":1654868575406,\"tx\":1654868575406,\"url\":\"https%3A%2F%2Fwww.lpu.in%2F\",\"pet\":1654868575406,\"set\":1654868575406}",
+    "domain": "www.lpu.in",
+    "path": "/",
+    "expires": 1654870375,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "__stp",
+    "value": "{\"visit\":\"new\",\"uuid\":\"d9007788-a373-40e3-90e3-3a9bbae19faa\"}",
+    "domain": "www.lpu.in",
+    "path": "/",
+    "expires": 1717076575,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "__stdf",
+    "value": "0",
+    "domain": "www.lpu.in",
+    "path": "/",
+    "expires": 1655732576,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "__cf_bm",
+    "value": "g_DnB3tBR27jnE1lrxa6VsuqHlieziit1nHQfUTwIvk-1654868580-0-ATwHPAfBBtV3buMVGT3tnw4SZRGE6Q3JcXk1AFLUfgR53q1uC+7Mpd7MrqR3wyRe8a0R61JiXrPM6omcYuwPR8Co5FcXhHuXiQrqQdleK4Q5lVnMjHUW7sCT9i/+xWXEBA==",
+    "domain": ".lpu.in",
+    "path": "/",
+    "expires": 1654870376.967026,
+    "httpOnly": true,
+    "secure": true
+  },
+  {
+    "name": "__stgeo",
+    "value": "\"1\"",
+    "domain": "www.lpu.in",
+    "path": "/",
+    "expires": 1654954977,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "__stbpnenable",
+    "value": "1",
+    "domain": "www.lpu.in",
+    "path": "/",
+    "expires": 1654954977,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_clck",
+    "value": "duig5j|1|f27|0",
+    "domain": ".lpu.in",
+    "path": "/",
+    "expires": 1686404577,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_fw_crm_v",
+    "value": "fe9aa881-089b-47a0-8872-949425d1cb22",
+    "domain": ".www.lpu.in",
+    "path": "/",
+    "expires": 1686404578,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_clsk",
+    "value": "1egsh57|1654868578860|1|1|l.clarity.ms/collect",
+    "domain": ".lpu.in",
+    "path": "/",
+    "expires": 1654954978,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "npfwg",
+    "value": "1",
+    "domain": ".www.lpu.in",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false
+  }
+]

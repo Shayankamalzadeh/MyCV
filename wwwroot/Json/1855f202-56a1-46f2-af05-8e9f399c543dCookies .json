@@ -1,0 +1,22 @@
+[
+  {
+    "Key": "login_region",
+    "Value": "default"
+  },
+  {
+    "Key": "login_domain",
+    "Value": "\"\""
+  },
+  {
+    "Key": "username-localhost-8886",
+    "Value": "\"2|1:0|10:1654249120|23:username-localhost-8886|44:MzM0Yzc2OWI5ZWE3NDA0ZDlmNDgyZDg1NjVmMTQ3NDI=|4b35908484b4d39c0999796ef64870bed2d0bfecb173e384e83d360f6316792e\""
+  },
+  {
+    "Key": "PHPSESSID",
+    "Value": "7sv4t4p6sa5dn0p05v4d06ackg"
+  },
+  {
+    "Key": "security",
+    "Value": "impossible"
+  }
+]
